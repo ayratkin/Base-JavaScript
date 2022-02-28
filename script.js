@@ -7,4 +7,4 @@ let $sdgdf;
 
 // НЕ верное объявление
 let 123info;
-let me-age;
+let my-age;
