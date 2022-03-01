@@ -40,7 +40,7 @@ console.log(myName) => Выведет Sanya
 
 // КОНСТАНТЫ
 // ОБЪЯВЛЕНИЕ КОНСТАНТ
-*/
+
 const myAge = 36;
 myAge = 18
 console.log(myAge)
@@ -50,3 +50,15 @@ console.log(myAge)
 // нижнее подчеркивание
 
 const BLOCK_SIZE = 25;
+
+*/
+
+// Переменные можно объявлять черезе var
+// Отличие таких переменных:
+// 1. Область видимости выходит за рамки ифов, циклов:
+
+if (true) {
+    var myVar = 10 
+}
+
+console.log(myVar)
