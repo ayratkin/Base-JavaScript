@@ -1,6 +1,6 @@
 /*
 ----------------------------------------------------------------------------------
-// Объявление функции
+// Объявление функции (Function Decloration)
 
 function myFunc(myParameters) {
     //тело функции
@@ -138,3 +138,46 @@ function calcSum(numOne = 1, numTwo = 2) {
 }
 
 let funcRez = calcSum(1, 2);
+
+----------------------------------------------------------------------------------
+// Function Expression (Функциональное выражение)
+
+// Это еще один метод создания функций. После ковычек обязательно точка с запятой
+
+let showMessage = function () {
+    console.log('Привет');
+};
+
+showMessage();
+
+// В переменную можно запихнуть и ранее объявленную функцию
+// Например:
+
+function changeMessage() {
+    // Используется внешняя переменная
+    message = "Сообщение"
+};
+
+someVar = changeMessage;
+
+changeMessage()
+someVar() // Обе функции вернут то же самое
+
+// Разница между Function Decloration и Expression
+// Function Decloration мы можем вызвать в любом месте программы, 
+// а Expression только после объявления. 
+
+// Объявив функцию за пределами блока (в этом случае if), мы 
+// сможем достучаться до неё вне этого блока.
+// Напрример:
+
+let getSumm;
+
+if(2 > 1) {
+    getSumm = function () {
+        let summ = 1 + 2;
+        console.log(summ);
+    };
+}
+
+getSumm();
