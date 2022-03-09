@@ -146,3 +146,5 @@ console.log(true || false) // True
 true || 'Фрилансер'
 // Первые true это 58
 null || 58
+
+*/
